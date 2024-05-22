@@ -4,7 +4,6 @@ import cv2
 from PIL import Image, ImageDraw, ImageFont
 import random
 import string
-from copy import deepcopy
 
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 TEXTS_PATH = os.path.join(SCRIPT_PATH, 'texts')
@@ -107,8 +106,6 @@ missing["Courier_New"]["w"] = (6,6)
 missing["Courier_New"]["x"] = (6,6)
 missing["Courier_New"]["y"] = (6,0)
 missing["Courier_New"]["z"] = (6,6)
-
-
 
 
 def generate_random_text(N):
@@ -329,11 +326,7 @@ def main(text = None, font = "Arial", rotate = True, mode = None, N = 100) :
         
         text_image = rotate_image(text_image, random_angle)
     
-    # Numeracja plików odpowiadająca liczbie plików w katalogu texts
-    
     save_image_and_text(text_image, text, font, mode)
-
-
 
 input_text = 'INDUSTRIAL SOCIETY AND ITS FUTURE\nIntroduction\n\n1. The Industrial Revolution and its consequences have been a disaster for the human\nrace. They have greatly increased the life expectancy of those of us who live in\nadvanced countries, but they have destabilized society, have made life unfulfilling,\nhave subjected human beings to indignities, have led to widespread psychological\nsuffering (in the Third World to physical suffering as well) and have inflicted severe\ndamage on the natural world. The continued development of technology will worsen\nthe situation. It will certainly subject human beings to greater indignities and inflict\ngreater damage on the natural world, it will probably lead to greater social disruption\nand psychological suffering, and it may lead to increased physical suffering even in\n“advanced” countries.'
 
