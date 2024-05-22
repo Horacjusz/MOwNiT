@@ -351,8 +351,6 @@ def generate_images() :
         if i > k // 2 : rot = False
         input_text = 'INDUSTRIAL SOCIETY AND ITS FUTURE\nIntroduction\n\n1. The Industrial Revolution and its consequences have been a disaster for the human\nrace. They have greatly increased the life expectancy of those of us who live in\nadvanced countries, but they have destabilized society, have made life unfulfilling,\nhave subjected human beings to indignities, have led to widespread psychological\nsuffering (in the Third World to physical suffering as well) and have inflicted severe\ndamage on the natural world. The continued development of technology will worsen\nthe situation. It will certainly subject human beings to greater indignities and inflict\ngreater damage on the natural world, it will probably lead to greater social disruption\nand psychological suffering, and it may lead to increased physical suffering even in\n“advanced” countries.'
         main(N = 500, text = input_text, rotate = rot, font = input_font)
-        input_text = "01234\n56789"
-        main(N = 500, text = input_text, rotate = rot, font = input_font)
 
 def generate_letters() :
     global fonts
