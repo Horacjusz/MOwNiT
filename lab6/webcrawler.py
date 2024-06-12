@@ -13,7 +13,7 @@ from useful_functions import time_sentence
 # Get the directory path of the current script
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 # Define the directory to save documents
-DOCS_DIR = os.path.join(SCRIPT_PATH, "docs")
+DOCS_DIR = os.path.join(SCRIPT_PATH, "docs_2")
 
 # Define shared variables for multiprocessing
 docs_saved = multiprocessing.Value('i', 0)  # Shared value for the number of saved documents

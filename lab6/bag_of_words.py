@@ -9,8 +9,8 @@ from useful_functions import time_sentence
 from sklearn.preprocessing import normalize
 
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
-DOCS_DIR = os.path.join(SCRIPT_PATH, "docs")
-DATA_DIR = os.path.join(SCRIPT_PATH, "data")
+DOCS_DIR = os.path.join(SCRIPT_PATH, "docs_2")
+DATA_DIR = os.path.join(SCRIPT_PATH, "data_2")
 TERM_MATRIX_FILE = os.path.join(DATA_DIR, "term_matrix.npz")
 KEYWORD_SET_FILE = os.path.join(DATA_DIR, "keyword_set.npz")
 WORD_INDEXES_FILE = os.path.join(DATA_DIR, "word_indexes.npy")
