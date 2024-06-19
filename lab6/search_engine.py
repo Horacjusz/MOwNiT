@@ -127,7 +127,7 @@ def search():
         k = min(k, len(file_urls))
         
         with_svd = False
-        # with_svd = True
+        with_svd = True
         
         if with_svd :
             term_matrix = term_matrix.transpose()
